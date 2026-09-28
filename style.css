@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spiner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 5px solid rgb(0, 183,255);
+    animation-duration: 1.5s;
+    animation-name: spiner;
+    animation-iteration-count: infinite;
+
+}
+@keyframes spiner{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+     100%{
+         transform: rotate(27deg);
+    }
+}
